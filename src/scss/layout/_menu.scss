@@ -1,0 +1,76 @@
+.menu {
+    margin: 80px 0;
+    @include flex(row, center, center, nowrap, 30px);
+
+    .menu-item {
+        @include flex(column, center, center, nowrap, 14px);
+
+        .menu-img {
+            @include flex(column, center, center, nowrap, 3px);
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .menu-text {
+            text-align: center;
+            font-size: $font-md;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 1.08px;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.menu-extend {
+    margin: 0 165px;
+    @include flex(row, center, start, nowrap, null);
+    .menu-ext-text {
+        @include flex(column, center, center, nowrap, 10px);
+        background-color: $creme;
+        width: 555px;
+        height: 348px;
+        padding: 58px 56px;
+
+        h1 {
+            color: $black;
+            text-align: center;
+            font-family: $heading-font;
+            font-size: $font-xl;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 1.12px;
+            text-transform: uppercase;
+            @include flex(column, center, center, nowrap, 20px);
+        }
+
+        p {
+            @include flex(column, center, center, nowrap, 20px);
+            color: $brown;
+            text-align: center;
+            font-size: $font-sm;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        button {
+            border: none;
+            padding: 15px 18px;
+            background-color: $creme;
+            text-decoration: 1px underline;
+            @include flex(column, center, center, nowrap, 30px);
+        }
+    }
+
+    .menu-ext-img {
+        img {
+            width: 555px;
+            height: 348px;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+header {
+    padding: 22px 0;
+
+    .logo {
+        width: 145px;
+        height: 38.327px;
+        flex-shrink: 0;
+        @include flex(row, center, start, nowrap, null);
+    }
+
+    .center-items {
+        @include flex(row, center, start, nowrap, 60px);
+    }
+
+    .icons {
+        @include flex(row, center, start, nowrap, 12px);
+
+        li {
+            i {
+                font-size: $font-md;
+                &:hover {
+                    color: $brown;
+                }
+            }
+        }
+    }
+}

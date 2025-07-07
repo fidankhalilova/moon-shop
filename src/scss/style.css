@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #FFF;
+}
+
+p {
+  color: #3A3845;
+}
+
+a {
+  text-decoration: none;
+  color: #3A3845;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 8px 12px;
+}
+a:hover {
+  background-color: #3A3845;
+  color: #F7F6F5;
+  transition: 0.3s ease-in-out;
+}
+
+header {
+  padding: 22px 0;
+}
+header .logo {
+  width: 145px;
+  height: 38.327px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+header .center-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  gap: 60px;
+}
+header .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+header .icons li i {
+  font-size: 18px;
+}
+header .icons li i:hover {
+  color: #826F66;
+}
+
+.preview .preview-back {
+  position: relative;
+}
+.preview .preview-back img {
+  width: 100%;
+  height: auto;
+}
+.preview .front-info {
+  background-color: #826F66;
+  position: absolute;
+  width: 420px;
+  height: 672.4px;
+  top: 83px;
+  left: 120px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 42px;
+  flex: 1 0 0;
+}
+.preview .front-info .front-icon {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.preview .front-info .front-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.preview .front-info h4 {
+  font-size: 18px;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.preview .front-info h1 {
+  font-size: 36px;
+  color: #FFF;
+  font-family: "EB Garamond", "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1.44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.preview .front-info button {
+  border: none;
+  background-color: #FFF;
+  color: #826F66;
+  font-weight: 600;
+  padding: 14px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.preview .front-info button:hover {
+  background-color: #3A3845;
+  color: #F7F6F5;
+  transition: 0.3s ease-in-out;
+}
+
+.menu {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 14px;
+}
+.menu .menu-item .menu-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 3px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu .menu-item .menu-text {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+
+.menu-extend {
+  margin: 0 165px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+.menu-extend .menu-ext-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  background-color: #F7F6F5;
+  width: 555px;
+  height: 348px;
+  padding: 58px 56px;
+}
+.menu-extend .menu-ext-text h1 {
+  color: #3A3845;
+  text-align: center;
+  font-family: "EB Garamond", "Inter", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.menu-extend .menu-ext-text p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  color: #826F66;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.menu-extend .menu-ext-text button {
+  border: none;
+  padding: 15px 18px;
+  background-color: #F7F6F5;
+  -webkit-text-decoration: 1px underline;
+          text-decoration: 1px underline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.menu-extend .menu-ext-img img {
+  width: 555px;
+  height: 348px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+.preview {
+
+    .preview-back {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .front-info {
+        background-color: $brown;
+        position: absolute;
+        width: 420px;
+        height: 672.4px;
+        top: 83px;
+        left: 120px;
+        padding: 30px;
+        @include flex(column, center, center, nowrap, 42px);
+        flex: 1 0 0;
+
+        .front-icon {
+            width: 400px;
+            height: auto;
+            @include flex(column, center, center, nowrap, null);
+        }
+
+        .front-texts {
+            @include flex(column, center, center, nowrap, 20px);
+        }
+
+        h4 {
+            font-size: $font-md;
+            color: $white;
+            @include flex(column, center, center, nowrap, null);
+        }
+
+        h1 {
+            font-size: $font-xxl;
+            color: $white;
+            font-family: $heading-font;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 1.44px;
+            @include flex(column, center, center, nowrap, null);
+        }
+
+        button {
+            border: none;
+            background-color: $white;
+            color: $brown;
+            font-weight: 600;
+            padding: 14px 60px;
+            @include flex(column, center, center, nowrap, null);
+
+            &:hover {
+                background-color: $black;
+                color: $creme;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
