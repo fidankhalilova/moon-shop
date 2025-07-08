@@ -1,0 +1,43 @@
+.sign-in {
+    @include flex(column, center, center, nowrap, null);
+
+    .email-form {
+        @include flex(column, center, center, nowrap, 20px);
+        padding: 80px 60px;
+
+        p {
+            color: $black;
+            text-align: center;
+            font-size: $font-sm;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+        }
+
+        h2 {
+            color: $black;
+            text-align: center;
+            font-family: $heading-font;
+            font-size: $font-xl;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 1.12px;
+            text-transform: uppercase;
+        }
+
+        input {
+            @include flex(column, center, center, nowrap, 10px);
+            padding: 14px 80px;
+            border: none;
+            border-bottom: 1px solid $black;
+        }
+
+        button {
+            @include flex(column, center, center, nowrap, 6px);
+            border: 1px solid $black;
+            padding: 15px 40px;
+            background-color: $white;
+        }
+    }
+}

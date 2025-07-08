@@ -73,8 +73,7 @@ a {
   padding: 8px 12px;
 }
 a:hover {
-  background-color: #3A3845;
-  color: #F7F6F5;
+  color: #826F66;
   transition: 0.3s ease-in-out;
 }
 
@@ -423,4 +422,148 @@ header .icons li i:hover {
   border: 1px solid #3A3845;
   background-color: #FFF;
   margin-top: 30px;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sign-in .email-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 80px 60px;
+}
+.sign-in .email-form p {
+  color: #3A3845;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.sign-in .email-form h2 {
+  color: #3A3845;
+  text-align: center;
+  font-family: "EB Garamond", "Inter", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+}
+.sign-in .email-form input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 14px 80px;
+  border: none;
+  border-bottom: 1px solid #3A3845;
+}
+.sign-in .email-form button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 6px;
+  border: 1px solid #3A3845;
+  padding: 15px 40px;
+  background-color: #FFF;
+}
+
+footer {
+  background-color: #3A3845;
+  padding: 60px 40px 30px;
+}
+footer .ft-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: #F7F6F5;
+  margin-bottom: 30px;
+}
+footer .ft-top .ft-logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 40px;
+  padding: 20px;
+  float: left;
+}
+footer .ft-top .ft-logo img {
+  width: 200px;
+  height: auto;
+}
+footer .ft-top .ft-logo p {
+  color: #F7F6F5;
+}
+footer .ft-top .ft-logo button {
+  border: none;
+  border: 2px solid #F7F6F5;
+  background-color: #3A3845;
+  color: #F7F6F5;
+  padding: 14px 20px;
+}
+footer .ft-top .ft-logo button:hover {
+  background-color: #F7F6F5;
+  color: #3A3845;
+  transition: 0.3s ease-in-out;
+}
+footer .ft-top .ft-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  height: 100%;
+  padding: 50px;
+  margin-left: 30px;
+  border-left: 1px solid #F7F6F5;
+}
+footer .ft-top .ft-links p {
+  color: #F7F6F5;
+  font-weight: 500;
+  margin-left: 12px;
+}
+footer .ft-top .ft-links ul {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+footer .ft-top .ft-links ul li a {
+  color: #F7F6F5;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+footer .ft-top .ft-links ul li a:hover {
+  color: #826F66;
+}
+footer .ft-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  width: 100%;
+  padding-top: 30px;
+  border-top: 1px solid #F7F6F5;
+}
+footer .ft-line p {
+  color: #F7F6F5;
 }/*# sourceMappingURL=style.css.map */
