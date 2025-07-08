@@ -233,15 +233,13 @@ header .icons li i:hover {
   text-transform: uppercase;
 }
 
-.menu-extend {
-  margin: 0 165px;
+.menu-extend, .blog .blog-content, .promo {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
   flex-wrap: nowrap;
 }
-.menu-extend .menu-ext-text {
+.menu-extend .menu-ext-text, .blog .blog-content .menu-ext-text, .promo .menu-ext-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,9 +249,8 @@ header .icons li i:hover {
   background-color: #F7F6F5;
   width: 555px;
   height: 348px;
-  padding: 58px 56px;
 }
-.menu-extend .menu-ext-text h1 {
+.menu-extend .menu-ext-text h1, .blog .blog-content .menu-ext-text h1, .promo .menu-ext-text h1 {
   color: #3A3845;
   text-align: center;
   font-family: "EB Garamond", "Inter", sans-serif;
@@ -268,15 +265,14 @@ header .icons li i:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 20px;
 }
-.menu-extend .menu-ext-text p {
+.menu-extend .menu-ext-text p, .blog .blog-content .menu-ext-text p, .promo .menu-ext-text p {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 25px;
   color: #826F66;
   text-align: center;
   font-size: 16px;
@@ -284,12 +280,14 @@ header .icons li i:hover {
   font-weight: 400;
   line-height: 24px;
 }
-.menu-extend .menu-ext-text button {
+.menu-extend .menu-ext-text button, .blog .blog-content .menu-ext-text button, .promo .menu-ext-text button {
   border: none;
   padding: 15px 18px;
   background-color: #F7F6F5;
   -webkit-text-decoration: 1px underline;
           text-decoration: 1px underline;
+  text-transform: uppercase;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -297,9 +295,132 @@ header .icons li i:hover {
   flex-wrap: nowrap;
   gap: 30px;
 }
-.menu-extend .menu-ext-img img {
+.menu-extend .menu-ext-img, .blog .blog-content .menu-ext-img, .promo .menu-ext-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.menu-extend .menu-ext-img img, .blog .blog-content .menu-ext-img img, .promo .menu-ext-img img {
   width: 555px;
   height: 348px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.blog h2 {
+  color: #3A3845;
+  text-align: center;
+  font-family: "EB Garamond", "Inter", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.blog .blog-content h1 {
+  margin-top: 20px;
+}
+.blog .blog-content h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  font-size: 16px;
+  color: #807F86;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1.08px;
+  font-family: "Inter", sans-serif;
+}
+
+.best-sellers, .new-items {
+  margin: 80px 0;
+}
+.best-sellers h2, .new-items h2 {
+  color: #3A3845;
+  text-align: center;
+  font-family: "EB Garamond", "Inter", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.best-sellers .sell-items, .new-items .sell-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  margin: 70px 0;
+}
+.best-sellers .sell-items .selling-item, .new-items .sell-items .selling-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 14px;
+}
+.best-sellers .sell-items .selling-item .selling-img, .new-items .sell-items .selling-item .selling-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 3px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.best-sellers .sell-items .selling-item .selling-img img, .new-items .sell-items .selling-item .selling-img img {
+  width: 304px;
+  height: auto;
+}
+.best-sellers .sell-items .selling-item .selling-text, .new-items .sell-items .selling-item .selling-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  gap: 7px;
+}
+.best-sellers .sell-items .selling-item .selling-text h3, .new-items .sell-items .selling-item .selling-text h3 {
+  color: #3A3845;
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.best-sellers .sell-items .selling-item .selling-text p, .new-items .sell-items .selling-item .selling-text p {
+  color: #807F86;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 15px;
+}
+.best-sellers .sell-items .selling-item .selling-text button, .new-items .sell-items .selling-item .selling-text button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 18px;
+  align-self: stretch;
+  border: 1px solid #3A3845;
+  background-color: #FFF;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
