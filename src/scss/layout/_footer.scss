@@ -8,7 +8,7 @@ footer {
         margin-bottom: 30px;
 
         .ft-logo {
-            @include flex(column, null, null, nowrap, 40px);
+            @include flex(column, null, null, nowrap, 30px);
             padding: 20px;
             float: left;
 
@@ -19,6 +19,7 @@ footer {
 
             p {
                 color: $light-gray;
+                line-height: 22px;
             }
 
             button {
@@ -39,12 +40,12 @@ footer {
         .ft-links {
             @include flex(row, null, center, nowrap, 20px);
             height: 100%;
-            padding: 50px;
+            padding: 60px 50px;
             margin-left: 30px;
             border-left: 1px solid $light-gray;
             p {
                 color: $light-gray;
-                font-weight: 500;
+                font-weight: 600;
                 margin-left: 12px;
             }
 

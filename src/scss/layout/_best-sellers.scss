@@ -15,7 +15,7 @@
 
     .sell-items {
         @include flex(row, center, center, nowrap, 30px);
-        margin: 70px 0;
+        margin: 50px 0;
 
         .selling-item {
             @include flex(column, center, center, nowrap, 14px);
@@ -66,4 +66,13 @@
 
 .new-items {
     @extend .best-sellers;
+}
+
+.similar-items {
+    @extend .best-sellers;
+    h2 {
+        font-size: $font-xxl;
+        margin-left: 10px;
+        text-align: left;
+    }
 }

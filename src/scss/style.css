@@ -77,6 +77,10 @@ a:hover {
   transition: 0.3s ease-in-out;
 }
 
+.breadcrumb {
+  margin: 10px 0;
+}
+
 header {
   padding: 22px 0;
 }
@@ -341,10 +345,10 @@ header .icons li i:hover {
   font-family: "Inter", sans-serif;
 }
 
-.best-sellers, .new-items {
+.best-sellers, .similar-items, .new-items {
   margin: 80px 0;
 }
-.best-sellers h2, .new-items h2 {
+.best-sellers h2, .similar-items h2, .new-items h2 {
   color: #3A3845;
   text-align: center;
   font-family: "EB Garamond", "Inter", sans-serif;
@@ -355,16 +359,16 @@ header .icons li i:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.best-sellers .sell-items, .new-items .sell-items {
+.best-sellers .sell-items, .similar-items .sell-items, .new-items .sell-items {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   gap: 30px;
-  margin: 70px 0;
+  margin: 50px 0;
 }
-.best-sellers .sell-items .selling-item, .new-items .sell-items .selling-item {
+.best-sellers .sell-items .selling-item, .similar-items .sell-items .selling-item, .new-items .sell-items .selling-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -372,7 +376,7 @@ header .icons li i:hover {
   flex-wrap: nowrap;
   gap: 14px;
 }
-.best-sellers .sell-items .selling-item .selling-img, .new-items .sell-items .selling-item .selling-img {
+.best-sellers .sell-items .selling-item .selling-img, .similar-items .sell-items .selling-item .selling-img, .new-items .sell-items .selling-item .selling-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -382,11 +386,11 @@ header .icons li i:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.best-sellers .sell-items .selling-item .selling-img img, .new-items .sell-items .selling-item .selling-img img {
+.best-sellers .sell-items .selling-item .selling-img img, .similar-items .sell-items .selling-item .selling-img img, .new-items .sell-items .selling-item .selling-img img {
   width: 304px;
   height: auto;
 }
-.best-sellers .sell-items .selling-item .selling-text, .new-items .sell-items .selling-item .selling-text {
+.best-sellers .sell-items .selling-item .selling-text, .similar-items .sell-items .selling-item .selling-text, .new-items .sell-items .selling-item .selling-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,7 +398,7 @@ header .icons li i:hover {
   flex-wrap: nowrap;
   gap: 7px;
 }
-.best-sellers .sell-items .selling-item .selling-text h3, .new-items .sell-items .selling-item .selling-text h3 {
+.best-sellers .sell-items .selling-item .selling-text h3, .similar-items .sell-items .selling-item .selling-text h3, .new-items .sell-items .selling-item .selling-text h3 {
   color: #3A3845;
   text-align: left;
   font-size: 14px;
@@ -404,7 +408,7 @@ header .icons li i:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.best-sellers .sell-items .selling-item .selling-text p, .new-items .sell-items .selling-item .selling-text p {
+.best-sellers .sell-items .selling-item .selling-text p, .similar-items .sell-items .selling-item .selling-text p, .new-items .sell-items .selling-item .selling-text p {
   color: #807F86;
   font-size: 14px;
   font-style: normal;
@@ -412,7 +416,7 @@ header .icons li i:hover {
   line-height: 22px;
   margin-top: 15px;
 }
-.best-sellers .sell-items .selling-item .selling-text button, .new-items .sell-items .selling-item .selling-text button {
+.best-sellers .sell-items .selling-item .selling-text button, .similar-items .sell-items .selling-item .selling-text button, .new-items .sell-items .selling-item .selling-text button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -422,6 +426,12 @@ header .icons li i:hover {
   border: 1px solid #3A3845;
   background-color: #FFF;
   margin-top: 30px;
+}
+
+.similar-items h2 {
+  font-size: 36px;
+  margin-left: 10px;
+  text-align: left;
 }
 
 .sign-in {
@@ -499,7 +509,7 @@ footer .ft-top .ft-logo {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 40px;
+  gap: 30px;
   padding: 20px;
   float: left;
 }
@@ -509,6 +519,7 @@ footer .ft-top .ft-logo img {
 }
 footer .ft-top .ft-logo p {
   color: #F7F6F5;
+  line-height: 22px;
 }
 footer .ft-top .ft-logo button {
   border: none;
@@ -529,13 +540,13 @@ footer .ft-top .ft-links {
   flex-wrap: nowrap;
   gap: 20px;
   height: 100%;
-  padding: 50px;
+  padding: 60px 50px;
   margin-left: 30px;
   border-left: 1px solid #F7F6F5;
 }
 footer .ft-top .ft-links p {
   color: #F7F6F5;
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 12px;
 }
 footer .ft-top .ft-links ul {
