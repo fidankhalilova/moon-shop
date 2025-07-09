@@ -79,7 +79,7 @@ a:hover {
 }
 
 .breadcrumb {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 header {
@@ -666,7 +666,7 @@ footer .ft-line p {
   gap: 2px;
 }
 .item-info .item-info-section .product-info-part .rating-row .stars i {
-  fill: #C69B7B;
+  color: #C69B7B;
 }
 .item-info .item-info-section .product-info-part .rating-row p {
   color: #111827;
