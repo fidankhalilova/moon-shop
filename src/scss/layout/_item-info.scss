@@ -1,0 +1,207 @@
+.item-info {
+    margin: 40px 0;
+
+    .item-info-section {
+        @include flex(row, center, start, nowrap, 100px);
+
+        .pic-part {
+            @include flex(column, start, center, nowrap, 14px);
+
+            .main-item-pic {
+                @include flex(column, center, center, nowrap, null);
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+            .main-other-pics {
+                @include flex(row, center, center, nowrap, 3px);
+            }
+        }
+
+        .product-info-part {
+            @include flex(column, start, start, nowrap, 20px);
+
+            h3 {
+                color: $black;
+                font-size: $font-xl;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+            }
+
+            .rating-row {
+                @include flex(row, start, center, nowrap, 40px);
+
+                .stars {
+                    @include flex(row, center, center, nowrap, 2px);
+
+                    i {
+                        fill: #C69B7B;
+                    }
+                }
+
+                p {
+                    color: #111827;
+                    font-size: $font-sm;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+
+                    span {
+                        color: #C69B7B;
+                    }
+                }
+            }
+
+            .prod-price {
+                @include flex(row, start, center, nowrap, 5px);
+
+                #dis-price {
+                    color: $black;
+                    font-size: $font-xl;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 32px;
+                    letter-spacing: 1.44px;
+                    text-transform: uppercase;
+                }
+
+                #org-price {
+                    color: $gray;
+                    font-size: $font-xl;
+                    font-style: normal;
+                    font-weight: 200;
+                    line-height: 32px;
+                    letter-spacing: 1.44px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .prod-colors {
+                margin-top: 20px;
+                @include flex(column, start, start, nowrap, 10px);
+
+                .recent-color {
+                    @include flex(row, start, center, nowrap, 10px);
+
+                    p {
+                        color: $black;
+                        font-size: $font-sm;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 22px;
+
+                        span {
+                            color: $brown;
+                            font-size: $font-sm;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 22px;
+                        }
+                    }
+                }
+
+                .other-colors {
+                    @include flex(row, start, center, nowrap, 10px);
+                    cursor: pointer;
+                }
+            }
+
+            .action-btns {
+                margin: 30px 0;
+                width: 500px;
+
+                .rowk {
+                    @include flex(row, start, start, nowrap, 20px);
+
+                    .add-product {
+                        @include flex(row, space-between, center, nowrap, 20px);
+                        border: 2px solid $black;
+                        color: $black;
+                        padding: 20px 30px;
+                        margin-bottom: 20px;
+                        cursor: pointer;
+                    }
+
+                    .add-cart-btn {
+                        @include flex(row, center, center, nowrap, 20px);
+                        background-color: $black;
+                        color: $white;
+                        padding: 20px 30px;
+                        margin-bottom: 20px;
+                        border: 2px solid $black;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+
+                    .buy-btn {
+                        @extend .add-cart-btn;
+                        margin-bottom: 0;
+                        background-color: $white;
+                        color: $black;
+                        margin-left: 0;
+                        border: 2px solid $black;
+                        cursor: pointer;
+                    }
+
+                    .save-btn {
+                        @extend .buy-btn;
+
+                        i {
+                            font-size: $font-sm;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .prod-share {
+                @include flex(column, start, center, nowrap, 20px);
+
+                .share-text {
+                    color: $black;
+                    font-size: $font-sm;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+                    margin-right: 12px;
+                }
+
+                .social-links {
+                    @include flex(row, start, center, nowrap, 10px);
+                    i {
+                        color: #C69B7B;
+                        font-size: $font-md;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .about-items {
+                margin: 20px 0;
+                .details {
+                    padding: 20px 30px;
+                    border-top: 2px solid $black;
+                    @include flex(row, space-between, center, nowrap, 300px);
+                    a {
+                        font-weight: 600;
+                    }
+                    i {
+                        cursor: pointer;
+                    }
+                }
+                .last {
+                    border-bottom: 2px solid $black;
+                }
+            }
+
+        }
+    }
+
+}

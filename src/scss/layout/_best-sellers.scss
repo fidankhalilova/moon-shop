@@ -55,17 +55,18 @@
                     @include flex(null, center, center, null, 5px);
                     padding: 15px 18px;
                     align-self: stretch;
-                    border: 1px solid $black;
+                    border: 2px solid $black;
                     background-color: $white;
                     margin-top: 30px;
+                    &:hover {
+                        transition: 0.3s ease-in-out;
+                        background-color: $black;
+                        color: $white;
+                    }
                 }
             }
         }
     }
-}
-
-.new-items {
-    @extend .best-sellers;
 }
 
 .similar-items {
@@ -76,3 +77,4 @@
         text-align: left;
     }
 }
+

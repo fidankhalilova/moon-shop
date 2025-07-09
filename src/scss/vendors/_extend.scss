@@ -1,0 +1,7 @@
+.new-items {
+    @extend .best-sellers;
+}
+
+.promo {
+    @extend .menu-extend;
+}

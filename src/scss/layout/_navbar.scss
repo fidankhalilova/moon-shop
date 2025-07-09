@@ -20,6 +20,7 @@ header {
                 font-size: $font-md;
                 &:hover {
                     color: $brown;
+                    cursor: pointer;
                 }
             }
         }
