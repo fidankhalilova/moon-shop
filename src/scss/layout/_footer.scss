@@ -1,11 +1,10 @@
 footer {
     background-color: $black;
-    padding: 60px 40px 30px;
+    padding: 0px 40px 30px;
 
     .ft-top {
         @include flex(row, space-between, center, nowrap, null);
         color: $light-gray;
-        margin-bottom: 30px;
 
         .ft-logo {
             @include flex(column, null, null, nowrap, 30px);
@@ -40,7 +39,7 @@ footer {
         .ft-links {
             @include flex(row, null, center, nowrap, 20px);
             height: 100%;
-            padding: 60px 50px;
+            padding: 80px 50px;
             margin-left: 30px;
             border-left: 1px solid $light-gray;
             p {

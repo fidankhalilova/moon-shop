@@ -507,7 +507,7 @@ header .icons li i:hover {
 
 footer {
   background-color: #3A3845;
-  padding: 60px 40px 30px;
+  padding: 0px 40px 30px;
 }
 footer .ft-top {
   display: flex;
@@ -516,7 +516,6 @@ footer .ft-top {
   align-items: center;
   flex-wrap: nowrap;
   color: #F7F6F5;
-  margin-bottom: 30px;
 }
 footer .ft-top .ft-logo {
   display: flex;
@@ -553,7 +552,7 @@ footer .ft-top .ft-links {
   flex-wrap: nowrap;
   gap: 20px;
   height: 100%;
-  padding: 60px 50px;
+  padding: 80px 50px;
   margin-left: 30px;
   border-left: 1px solid #F7F6F5;
 }
