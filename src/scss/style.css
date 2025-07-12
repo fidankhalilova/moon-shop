@@ -119,20 +119,28 @@ header .icons li i:hover {
   cursor: pointer;
 }
 
-.preview .preview-back {
+.preview .preview-card {
   position: relative;
 }
-.preview .preview-back img {
+.preview .preview-card .preview-back {
   width: 100%;
-  height: auto;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
 }
-.preview .front-info {
+.preview .preview-card .preview-back img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.preview .preview-card .front-info {
   background-color: #826F66;
   position: absolute;
   width: 420px;
-  height: 672.4px;
-  top: 83px;
-  left: 120px;
+  height: 100%;
+  bottom: 0;
+  left: 100px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -142,7 +150,7 @@ header .icons li i:hover {
   gap: 42px;
   flex: 1 0 0;
 }
-.preview .front-info .front-icon {
+.preview .preview-card .front-info .front-icon {
   width: 400px;
   height: auto;
   display: flex;
@@ -151,7 +159,7 @@ header .icons li i:hover {
   align-items: center;
   flex-wrap: nowrap;
 }
-.preview .front-info .front-texts {
+.preview .preview-card .front-info .front-texts {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,7 +167,7 @@ header .icons li i:hover {
   flex-wrap: nowrap;
   gap: 20px;
 }
-.preview .front-info h4 {
+.preview .preview-card .front-info h4 {
   font-size: 18px;
   color: #FFF;
   display: flex;
@@ -168,7 +176,7 @@ header .icons li i:hover {
   align-items: center;
   flex-wrap: nowrap;
 }
-.preview .front-info h1 {
+.preview .preview-card .front-info h1 {
   font-size: 36px;
   color: #FFF;
   font-family: "EB Garamond", "Inter", sans-serif;
@@ -182,7 +190,7 @@ header .icons li i:hover {
   align-items: center;
   flex-wrap: nowrap;
 }
-.preview .front-info button {
+.preview .preview-card .front-info button {
   border: none;
   background-color: #FFF;
   color: #826F66;
@@ -194,7 +202,7 @@ header .icons li i:hover {
   align-items: center;
   flex-wrap: nowrap;
 }
-.preview .front-info button:hover {
+.preview .preview-card .front-info button:hover {
   background-color: #3A3845;
   color: #F7F6F5;
   transition: 0.3s ease-in-out;
